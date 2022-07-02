@@ -47,4 +47,15 @@ namespace Bakery.Tests
             Assert.AreEqual(35, newBread.GetBreadCost(10));
         }
     }
+
+    [TestClass]
+    public class PastryTests
+    {
+        [TestMethod]
+        public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+        {
+            Pastry newPastry = new Pastry();
+            Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+        }
+    }
 }
