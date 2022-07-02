@@ -11,5 +11,11 @@ namespace Bakery.Models
         {
             BreadPrice = breadPrice;
         }
+
+        public int GetBreadCost(int loaf)
+        {
+            double loafAdjustment = loaf / 3;
+            return BreadPrice * (loaf - (int)Math.Floor(loafAdjustment));
+        }
     }
 }
