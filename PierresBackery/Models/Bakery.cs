@@ -1,6 +1,4 @@
 using System;
-//using System.Drawing;
-//using Console = Colorful.Console;
 using System.Collections.Generic;
 
 namespace Bakery.Models
