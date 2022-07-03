@@ -44,7 +44,6 @@ namespace Bakery.Models
                     + ". Thank you for your order! ",
                 Color.Blue
             );
-            Console.ReadLine();
         }
     }
 }
