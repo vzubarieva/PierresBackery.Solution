@@ -1,4 +1,6 @@
 using System;
+//using System.Drawing;
+//using Console = Colorful.Console;
 using System.Collections.Generic;
 
 namespace Bakery.Models
@@ -16,6 +18,21 @@ namespace Bakery.Models
         {
             double loafAdjustment = loaf / 3;
             return BreadPrice * (loaf - (int)Math.Floor(loafAdjustment));
+        }
+    }
+
+    public class Pastry
+    {
+        public int Price { get; }
+
+        public Pastry(int price)
+        {
+            Price = price;
+        }
+
+        public int GetPastryCost(int pastry)
+        {
+            return Price * pastry - (((int)Math.Floor((double)pastry / 3) * Price) / 2);
         }
     }
 }
